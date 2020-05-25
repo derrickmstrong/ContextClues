@@ -49,7 +49,7 @@ $(function () {
     var weapon = weapons[i % 20];
 
     function innerFunction() {
-      alert(`Accusation ${i}: I accuse ${friend}, with the ${weapon} in ${location} !`);
+      alert(`Accusation ${i}: I accuse ${friend}, with the ${weapon} in ${location}!`);
     }
 
     return innerFunction;
