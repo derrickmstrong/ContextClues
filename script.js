@@ -1,4 +1,4 @@
-$(document).ready(function () {
+$(function () {
   var friends = ['Ricky', 'Mike', 'Ronnie', 'Bobby', 'Ralph'];
   var locations = [
     'car',
@@ -61,6 +61,8 @@ $(document).ready(function () {
           '!'
       );
     }
+
     return innerFunction;
+
   }
 });
