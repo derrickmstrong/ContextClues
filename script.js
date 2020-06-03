@@ -44,9 +44,9 @@ $(function () {
 
   function outerFunction(i) {
     // Modulus will allow us to use the i that is being hoisted and incremented from the for loop to limit the return to one of the valid array index values ie: when the i = 84 then friends[84 % 5] = 4 which has a value of 'Ralph'
-    var friend = friends[i % 5];
-    var location = locations[i % 10];
-    var weapon = weapons[i % 20];
+    var friend = friends[i % friends.length];
+    var location = locations[i % locations.length];
+    var weapon = weapons[i % weapons.length];
 
     function innerFunction() {
       alert(`Accusation ${i}: I accuse ${friend}, with the ${weapon} in ${location}!`);
